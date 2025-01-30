@@ -5,8 +5,8 @@ class Book(models.Model):
     title = models.CharField(max_length= 255)
     author= models.CharField(max_length=255)
     genre = models.CharField(max_length=255)
-    publication_date = models.DateTimeField(auto_now=True)
+    publication_date = models.DateField()
     availability = models.CharField(max_length=255)
-    edition = models.CharField(max_length=100)
+    edition = models.IntegerField()
     summary= models.CharField(max_length=255) 
     
